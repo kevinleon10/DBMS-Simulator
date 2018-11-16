@@ -1,0 +1,35 @@
+html,body{
+    margin: 0px;
+}
+
+#TituloDePagina{
+    font-size: 40px;
+    color: black;
+    font-weight: normal;
+    font-style: normal;
+    font-family: "Bookman Old Style";
+}
+
+#Subtitle{
+    font-size: 16px;
+    color: black;
+    font-weight: bold;
+    font-style: normal;
+    font-family: "Arial";
+}
+
+#TipoDeModulo{
+    font-size: 13px;
+    color: darkblue;
+    font-weight: bold;
+    font-style: normal;
+    font-family: "Arial";
+}
+
+#ShowPage{
+    font-size: 20px;
+}
+
+#Statistic{
+    font-size: 13px;
+}

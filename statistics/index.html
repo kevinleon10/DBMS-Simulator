@@ -1,0 +1,1587 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<script>
+function show(shown, hidden) {
+document.getElementById(shown).style.display='block';
+document.getElementById(hidden).style.display='none';
+return false;}
+</script>
+<meta charset="UTF-8">
+<title> Simulation Statistics </title>
+<link rel="stylesheet" href="style.css" type="text/css"/>
+</head>
+<body>
+        <div id="Run1">
+
+        <a href="#" onclick="return show('Run2','Run1');"><div id="ShowPage">Show page 2</div></a>
+
+        <table border=1 width="100%" cellspacing="0" cellpadding="2">
+            <tr>
+                <!-- Width,     height,     color-->
+                <td colspan="6" height="40" bgcolor="#add8e6"><center><div id="TituloDePagina"> Statistics of run 1 </div></center></td>
+            </tr>
+            <tr>
+
+                <td colspan="6" height="10"></td>
+            </tr>
+            <tr>
+                <!-- Parameters subtitle -->
+                <td colspan="6" height="10" bgcolor="#add8e6"><div id="Subtitle">Execution parameters:  <div id="TipoDeModulo">Maximum number of connections: 10, Query timeout:  10.0  , Query Processing Module Servers: 10, Transactions Module Servers: 10, Executor Module Servers:   10.  </div></div></td>
+            </tr>
+            <tr>
+                <!-- Space between parameters-->
+                <td colspan="6" height="10"></td>
+            </tr>
+            <tr>
+                <!-- Subtitles for modules-->
+                <td colspan="6" height="10" bgcolor="#add8e6"><div id="Subtitle">Module Statistics:</div></td>
+            </tr>
+            <!-- Modules-->
+            <tr>
+                <td width="0" height="150" valign="top" bgcolor="#add8e6"><center><div id="TipoDeModulo">Connections Module Statistics:</div></center>
+                    <!-- Connections module statistics -->
+                    <table  width="100%" border="2">
+                        <tr> <td bgcolor="white"><div id="Statistic">Arrival Rate(lambda): 0.4448357140982167</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Exit Rate(mu): 0.12814818012989249</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Busy time(rho): 0.34712604864721924</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Queue Size(Lq): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Clients in Service(Ls): 3.471260486472192</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Clients in Module(L): 3.471260486472192</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Queue(Wq): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Service(Ws): 7.803466260592919</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(W): 7.803466260592919</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(DDL): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(UPDATE)): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(JOIN): 8.792940364566864</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(SELECT): 5.824518052645027</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Idle Time: 0.0</div></td> </tr>
+                    </table>
+                    <!-- End of connections module statistics -->
+                </td>
+                <td width="0" height="150" valign="top" bgcolor="#add8e6"><center><div id="TipoDeModulo">Process Module Statistics:</div></center>
+                    <!-- Process module statistics -->
+                    <table  width="100%" border="2">
+                        <tr> <td bgcolor="white"><div id="Statistic">Arrival Rate(lambda): 0.4448357140982167</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Exit Rate(mu): 0.6200455747831073</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Busy time(rho): 0.7174242220079077</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Queue Size(Lq): 0.11873504706201687</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Clients in Service(Ls): 0.7174242220079077</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Clients in Module(L): 0.8361592690699245</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Queue(Wq): 0.26691887206655573</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Service(Ws): 1.612784673690803</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(W): 1.8797035457573585</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(DDL): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(UPDATE)): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(JOIN): 2.0084197486566455</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(SELECT): 1.6866292414084274</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Idle Time: 0.6920360727957703</div></td> </tr>
+                    </table>
+                    <!-- End of process module statistics-->
+                </td>
+                <td width="0" height="150" valign="top" bgcolor="#add8e6"><center><div id="TipoDeModulo">Query Processing Module Statistics:</div></center>
+                    <!-- Query processing module statistics -->
+                    <table  width="100%" border="2">
+                        <tr> <td bgcolor="white"><div id="Statistic">Arrival Rate(lambda): 0.4448357140982167</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Exit Rate(mu): 0.4516076251974513</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Busy time(rho): 0.09850048787456284</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Queue Size(Lq): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Clients in Service(Ls): 0.9850048787456284</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Clients in Module(L): 0.9850048787456284</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Queue(Wq): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Service(Ws): 2.2143115930843313</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(W): 2.2143115930843313</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(DDL): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(UPDATE)): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(JOIN): 2.512275004859465</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(SELECT): 1.6183847695340638</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Idle Time: 2.240392061337981</div></td> </tr>
+                    </table>
+                    <!-- End of query processing module statistics -->
+                </td>
+                <td width="0" height="150" valign="top" bgcolor="#add8e6"><center><div id="TipoDeModulo">Transactions Module:</div></center>
+                    <!-- Transactions module statistics-->
+                    <table  width="100%" border="2">
+                        <tr> <td bgcolor="white"><div id="Statistic"> Rate(lambda): 0.26690142845893</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Exit Rate(mu): 0.7692307692307692</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Busy time(rho): 0.034697185699660904</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Queue Size(Lq): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Clients in Service(Ls): 0.34697185699660904</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Clients in Module(L): 0.34697185699660904</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Queue(Wq): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Service(Ws): 1.3</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(W): 1.3</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(DDL): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(UPDATE)): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(JOIN): 1.3000000000000003</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(SELECT): 1.2999999999999998</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Idle Time: 5.964942071056911</div></td> </tr>
+                    </table>
+                    <!-- End of transactions module statistics-->
+                </td>
+                <td width="0" height="150" valign="top" bgcolor="#add8e6"><center><div id="TipoDeModulo">Executor Module Statistics:</div></center>
+                    <!-- Executor module statistics-->
+                    <table  width="100%" border="2">
+                        <tr> <td bgcolor="white"><div id="Statistic">Arrival Rate(lambda): 0.26690142845893</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Exit Rate(mu): 0.4486987735566856</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Busy time(rho): 0.059483431689213544</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Queue Size(Lq): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Clients in Service(Ls): 0.5948343168921354</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Clients in Module(L): 0.5948343168921354</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Queue(Wq): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Service(Ws): 2.228666666666667</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(W): 2.228666666666667</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(DDL): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(UPDATE)): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(JOIN): 2.7929999999999997</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(SELECT): 1.1000000000000005</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Idle Time: 0.013680267571997362</div></td> </tr>
+                    </table>
+                    <!-- End of executor module statistics -->
+            </tr>
+            <!-- End of module statistics -->
+            </td>
+            <td width="0" height="80" valign="top" bgcolor="#add8e6"><div id="Subtitle">Query Statistics:</div>
+                <!-- Query statistics -->
+                <table  width="100%" border="2">
+                    <tr> <td bgcolor="white"><div id="Statistic">Discarded Connections: 0</div> </td> </tr>
+                    <tr> <td bgcolor="white"><div id="Statistic">Total Connection: 5</div> </td> </tr>
+                    <tr> <td bgcolor="white"><div id="Statistic">Average Connections Life Time: 1.3372</div> </td> </tr>
+                </table>
+                <!-- End of query statistics-->
+            </td>
+        </table>
+    </div>
+        <!-- -->
+        <!-- -->
+        <!-- End of page-->        <div id="Run2" style="display:none">
+
+        <a href="#" onclick="return show('Run1','Run2');"><div id="ShowPage">Show page 1</div></a>
+<a href="#" onclick="return show('Run3','Run2');"><div id="ShowPage">Show page 3</div></a>
+
+        <table border=1 width="100%" cellspacing="0" cellpadding="2">
+            <tr>
+                <!-- Width,     height,     color-->
+                <td colspan="6" height="40" bgcolor="#add8e6"><center><div id="TituloDePagina"> Statistics of run 2 </div></center></td>
+            </tr>
+            <tr>
+
+                <td colspan="6" height="10"></td>
+            </tr>
+            <tr>
+                <!-- Parameters subtitle -->
+                <td colspan="6" height="10" bgcolor="#add8e6"><div id="Subtitle">Execution parameters:  <div id="TipoDeModulo">Maximum number of connections: 10, Query timeout:  10.0  , Query Processing Module Servers: 10, Transactions Module Servers: 10, Executor Module Servers:   10.  </div></div></td>
+            </tr>
+            <tr>
+                <!-- Space between parameters-->
+                <td colspan="6" height="10"></td>
+            </tr>
+            <tr>
+                <!-- Subtitles for modules-->
+                <td colspan="6" height="10" bgcolor="#add8e6"><div id="Subtitle">Module Statistics:</div></td>
+            </tr>
+            <!-- Modules-->
+            <tr>
+                <td width="0" height="150" valign="top" bgcolor="#add8e6"><center><div id="TipoDeModulo">Connections Module Statistics:</div></center>
+                    <!-- Connections module statistics -->
+                    <table  width="100%" border="2">
+                        <tr> <td bgcolor="white"><div id="Statistic">Arrival Rate(lambda): 0.5911206892091874</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Exit Rate(mu): 0.1804585976987698</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Busy time(rho): 0.32756582215933794</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Queue Size(Lq): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Clients in Service(Ls): 3.2756582215933796</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Clients in Module(L): 3.2756582215933796</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Queue(Wq): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Service(Ws): 5.541437275652825</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(W): 5.541437275652825</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(DDL): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(UPDATE)): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(JOIN): 5.541437275652825</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(SELECT): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Idle Time: 0.0</div></td> </tr>
+                    </table>
+                    <!-- End of connections module statistics -->
+                </td>
+                <td width="0" height="150" valign="top" bgcolor="#add8e6"><center><div id="TipoDeModulo">Process Module Statistics:</div></center>
+                    <!-- Process module statistics -->
+                    <table  width="100%" border="2">
+                        <tr> <td bgcolor="white"><div id="Statistic">Arrival Rate(lambda): 0.5911206892091874</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Exit Rate(mu): 0.8409584795910074</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Busy time(rho): 0.7029130492823779</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Queue Size(Lq): 0.3594501447113445</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Clients in Service(Ls): 0.7029130492823779</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Clients in Module(L): 1.0623631939937224</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Queue(Wq): 0.6080824969808176</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Service(Ws): 1.1891193492529393</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(W): 1.797201846233757</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(DDL): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(UPDATE)): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(JOIN): 1.9329576930284902</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(SELECT): 1.6614459994390236</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Idle Time: 3.6090893137439153</div></td> </tr>
+                    </table>
+                    <!-- End of process module statistics-->
+                </td>
+                <td width="0" height="150" valign="top" bgcolor="#add8e6"><center><div id="TipoDeModulo">Query Processing Module Statistics:</div></center>
+                    <!-- Query processing module statistics -->
+                    <table  width="100%" border="2">
+                        <tr> <td bgcolor="white"><div id="Statistic">Arrival Rate(lambda): 0.3940804594727916</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Exit Rate(mu): 0.5383094235421523</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Busy time(rho): 0.07320705197387894</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Queue Size(Lq): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Clients in Service(Ls): 0.7320705197387894</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Clients in Module(L): 0.7320705197387894</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Queue(Wq): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Service(Ws): 1.8576676466480158</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(W): 1.8576676466480158</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(DDL): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(UPDATE)): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(JOIN): 1.4574003626409706</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(SELECT): 2.257934930655061</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Idle Time: 5.0844195864805455</div></td> </tr>
+                    </table>
+                    <!-- End of query processing module statistics -->
+                </td>
+                <td width="0" height="150" valign="top" bgcolor="#add8e6"><center><div id="TipoDeModulo">Transactions Module:</div></center>
+                    <!-- Transactions module statistics-->
+                    <table  width="100%" border="2">
+                        <tr> <td bgcolor="white"><div id="Statistic"> Rate(lambda): 0.1970402297363958</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Exit Rate(mu): 0.7692307692307694</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Busy time(rho): 0.025615229865731448</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Queue Size(Lq): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Clients in Service(Ls): 0.2561522986573145</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Clients in Module(L): 0.2561522986573145</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Queue(Wq): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Service(Ws): 1.2999999999999998</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(W): 1.2999999999999998</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(DDL): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(UPDATE)): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(JOIN): 1.2999999999999998</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(SELECT): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Idle Time: 7.499754879776577</div></td> </tr>
+                    </table>
+                    <!-- End of transactions module statistics-->
+                </td>
+                <td width="0" height="150" valign="top" bgcolor="#add8e6"><center><div id="TipoDeModulo">Executor Module Statistics:</div></center>
+                    <!-- Executor module statistics-->
+                    <table  width="100%" border="2">
+                        <tr> <td bgcolor="white"><div id="Statistic">Arrival Rate(lambda): 0.0985201148681979</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Exit Rate(mu): 0.9090909090909094</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Busy time(rho): 0.010837212635501765</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Queue Size(Lq): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Clients in Service(Ls): 0.10837212635501765</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Clients in Module(L): 0.10837212635501765</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Queue(Wq): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Service(Ws): 1.0999999999999996</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(W): 1.0999999999999996</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(DDL): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(UPDATE)): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(JOIN): 1.0999999999999996</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(SELECT): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Idle Time: 0.0</div></td> </tr>
+                    </table>
+                    <!-- End of executor module statistics -->
+            </tr>
+            <!-- End of module statistics -->
+            </td>
+            <td width="0" height="80" valign="top" bgcolor="#add8e6"><div id="Subtitle">Query Statistics:</div>
+                <!-- Query statistics -->
+                <table  width="100%" border="2">
+                    <tr> <td bgcolor="white"><div id="Statistic">Discarded Connections: 0</div> </td> </tr>
+                    <tr> <td bgcolor="white"><div id="Statistic">Total Connection: 6</div> </td> </tr>
+                    <tr> <td bgcolor="white"><div id="Statistic">Average Connections Life Time: 0.18333333333333326</div> </td> </tr>
+                </table>
+                <!-- End of query statistics-->
+            </td>
+        </table>
+    </div>
+        <!-- -->
+        <!-- -->
+        <!-- End of page-->        <div id="Run3" style="display:none">
+
+        <a href="#" onclick="return show('Run2','Run3');"><div id="ShowPage">Show page 2</div></a>
+<a href="#" onclick="return show('Run4','Run3');"><div id="ShowPage">Show page 4</div></a>
+
+        <table border=1 width="100%" cellspacing="0" cellpadding="2">
+            <tr>
+                <!-- Width,     height,     color-->
+                <td colspan="6" height="40" bgcolor="#add8e6"><center><div id="TituloDePagina"> Statistics of run 3 </div></center></td>
+            </tr>
+            <tr>
+
+                <td colspan="6" height="10"></td>
+            </tr>
+            <tr>
+                <!-- Parameters subtitle -->
+                <td colspan="6" height="10" bgcolor="#add8e6"><div id="Subtitle">Execution parameters:  <div id="TipoDeModulo">Maximum number of connections: 10, Query timeout:  10.0  , Query Processing Module Servers: 10, Transactions Module Servers: 10, Executor Module Servers:   10.  </div></div></td>
+            </tr>
+            <tr>
+                <!-- Space between parameters-->
+                <td colspan="6" height="10"></td>
+            </tr>
+            <tr>
+                <!-- Subtitles for modules-->
+                <td colspan="6" height="10" bgcolor="#add8e6"><div id="Subtitle">Module Statistics:</div></td>
+            </tr>
+            <!-- Modules-->
+            <tr>
+                <td width="0" height="150" valign="top" bgcolor="#add8e6"><center><div id="TipoDeModulo">Connections Module Statistics:</div></center>
+                    <!-- Connections module statistics -->
+                    <table  width="100%" border="2">
+                        <tr> <td bgcolor="white"><div id="Statistic">Arrival Rate(lambda): 0.28943452982151374</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Exit Rate(mu): 0.21150400074613032</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Busy time(rho): 0.13684588887229795</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Queue Size(Lq): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Clients in Service(Ls): 1.3684588887229796</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Clients in Module(L): 1.3684588887229796</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Queue(Wq): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Service(Ws): 4.728042951775209</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(W): 4.728042951775209</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(DDL): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(UPDATE)): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(JOIN): 4.728042951775209</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(SELECT): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Idle Time: 0.0</div></td> </tr>
+                    </table>
+                    <!-- End of connections module statistics -->
+                </td>
+                <td width="0" height="150" valign="top" bgcolor="#add8e6"><center><div id="TipoDeModulo">Process Module Statistics:</div></center>
+                    <!-- Process module statistics -->
+                    <table  width="100%" border="2">
+                        <tr> <td bgcolor="white"><div id="Statistic">Arrival Rate(lambda): 0.28943452982151374</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Exit Rate(mu): 0.6718488481916628</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Busy time(rho): 0.4308030453584179</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Queue Size(Lq): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Clients in Service(Ls): 0.4308030453584179</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Clients in Module(L): 0.4308030453584179</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Queue(Wq): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Service(Ws): 1.4884300281106135</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(W): 1.4884300281106135</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(DDL): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(UPDATE)): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(JOIN): 1.695737893056893</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(SELECT): 1.2811221631643344</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Idle Time: 6.117272738432176</div></td> </tr>
+                    </table>
+                    <!-- End of process module statistics-->
+                </td>
+                <td width="0" height="150" valign="top" bgcolor="#add8e6"><center><div id="TipoDeModulo">Query Processing Module Statistics:</div></center>
+                    <!-- Query processing module statistics -->
+                    <table  width="100%" border="2">
+                        <tr> <td bgcolor="white"><div id="Statistic">Arrival Rate(lambda): 0.19295635321434249</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Exit Rate(mu): 0.7155411766731065</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Busy time(rho): 0.026966491867245007</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Queue Size(Lq): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Clients in Service(Ls): 0.26966491867245007</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Clients in Module(L): 0.26966491867245007</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Queue(Wq): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Service(Ws): 1.397543611185982</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(W): 1.397543611185982</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(DDL): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(UPDATE)): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(JOIN): 2.684847578570694</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(SELECT): 0.11023964380127005</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Idle Time: 3.2699511227419285</div></td> </tr>
+                    </table>
+                    <!-- End of query processing module statistics -->
+                </td>
+                <td width="0" height="150" valign="top" bgcolor="#add8e6"><center><div id="TipoDeModulo">Transactions Module:</div></center>
+                    <!-- Transactions module statistics-->
+                    <table  width="100%" border="2">
+                        <tr> <td bgcolor="white"><div id="Statistic"> Rate(lambda): 0.19295635321434249</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Exit Rate(mu): 0.4347826086956523</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Busy time(rho): 0.044379961239298764</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Queue Size(Lq): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Clients in Service(Ls): 0.4437996123929876</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Clients in Module(L): 0.4437996123929876</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Queue(Wq): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Service(Ws): 2.2999999999999994</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(W): 2.2999999999999994</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(DDL): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(UPDATE)): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(JOIN): 0.2999999999999998</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(SELECT): 4.299999999999999</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Idle Time: 5.765038345113893</div></td> </tr>
+                    </table>
+                    <!-- End of transactions module statistics-->
+                </td>
+                <td width="0" height="150" valign="top" bgcolor="#add8e6"><center><div id="TipoDeModulo">Executor Module Statistics:</div></center>
+                    <!-- Executor module statistics-->
+                    <table  width="100%" border="2">
+                        <tr> <td bgcolor="white"><div id="Statistic">Arrival Rate(lambda): 0.19295635321434249</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Exit Rate(mu): 39.99999999999943</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Busy time(rho): 4.823908830358631E-4</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Queue Size(Lq): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Clients in Service(Ls): 0.004823908830358631</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Clients in Module(L): 0.004823908830358631</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Queue(Wq): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Service(Ws): 0.025000000000000355</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(W): 0.025000000000000355</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(DDL): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(UPDATE)): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(JOIN): 0.025000000000000355</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(SELECT): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Idle Time: 5.636995393338682</div></td> </tr>
+                    </table>
+                    <!-- End of executor module statistics -->
+            </tr>
+            <!-- End of module statistics -->
+            </td>
+            <td width="0" height="80" valign="top" bgcolor="#add8e6"><div id="Subtitle">Query Statistics:</div>
+                <!-- Query statistics -->
+                <table  width="100%" border="2">
+                    <tr> <td bgcolor="white"><div id="Statistic">Discarded Connections: 0</div> </td> </tr>
+                    <tr> <td bgcolor="white"><div id="Statistic">Total Connection: 3</div> </td> </tr>
+                    <tr> <td bgcolor="white"><div id="Statistic">Average Connections Life Time: 0.008333333333333451</div> </td> </tr>
+                </table>
+                <!-- End of query statistics-->
+            </td>
+        </table>
+    </div>
+        <!-- -->
+        <!-- -->
+        <!-- End of page-->        <div id="Run4" style="display:none">
+
+        <a href="#" onclick="return show('Run3','Run4');"><div id="ShowPage">Show page 3</div></a>
+<a href="#" onclick="return show('Run5','Run4');"><div id="ShowPage">Show page 5</div></a>
+
+        <table border=1 width="100%" cellspacing="0" cellpadding="2">
+            <tr>
+                <!-- Width,     height,     color-->
+                <td colspan="6" height="40" bgcolor="#add8e6"><center><div id="TituloDePagina"> Statistics of run 4 </div></center></td>
+            </tr>
+            <tr>
+
+                <td colspan="6" height="10"></td>
+            </tr>
+            <tr>
+                <!-- Parameters subtitle -->
+                <td colspan="6" height="10" bgcolor="#add8e6"><div id="Subtitle">Execution parameters:  <div id="TipoDeModulo">Maximum number of connections: 10, Query timeout:  10.0  , Query Processing Module Servers: 10, Transactions Module Servers: 10, Executor Module Servers:   10.  </div></div></td>
+            </tr>
+            <tr>
+                <!-- Space between parameters-->
+                <td colspan="6" height="10"></td>
+            </tr>
+            <tr>
+                <!-- Subtitles for modules-->
+                <td colspan="6" height="10" bgcolor="#add8e6"><div id="Subtitle">Module Statistics:</div></td>
+            </tr>
+            <!-- Modules-->
+            <tr>
+                <td width="0" height="150" valign="top" bgcolor="#add8e6"><center><div id="TipoDeModulo">Connections Module Statistics:</div></center>
+                    <!-- Connections module statistics -->
+                    <table  width="100%" border="2">
+                        <tr> <td bgcolor="white"><div id="Statistic">Arrival Rate(lambda): 0.5935701817775368</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Exit Rate(mu): 0.16523053583178784</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Busy time(rho): 0.35923758207854395</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Queue Size(Lq): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Clients in Service(Ls): 3.5923758207854397</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Clients in Module(L): 3.5923758207854397</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Queue(Wq): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Service(Ws): 6.052150076049171</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(W): 6.052150076049171</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(DDL): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(UPDATE)): 5.08103322073417</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(JOIN): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(SELECT): 7.9943837866791725</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Idle Time: 0.0</div></td> </tr>
+                    </table>
+                    <!-- End of connections module statistics -->
+                </td>
+                <td width="0" height="150" valign="top" bgcolor="#add8e6"><center><div id="TipoDeModulo">Process Module Statistics:</div></center>
+                    <!-- Process module statistics -->
+                    <table  width="100%" border="2">
+                        <tr> <td bgcolor="white"><div id="Statistic">Arrival Rate(lambda): 0.4946418181479474</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Exit Rate(mu): 0.5785759350608165</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Busy time(rho): 0.8549298167680506</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Queue Size(Lq): 0.4781629787203069</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Clients in Service(Ls): 0.8549298167680507</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Clients in Module(L): 1.3330927954883576</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Queue(Wq): 0.9666853087970988</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Service(Ws): 1.7283815993744813</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(W): 2.6950669081715803</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(DDL): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(UPDATE)): 2.076472185697149</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(JOIN): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(SELECT): 3.622958991883227</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Idle Time: 1.1737824681318678</div></td> </tr>
+                    </table>
+                    <!-- End of process module statistics-->
+                </td>
+                <td width="0" height="150" valign="top" bgcolor="#add8e6"><center><div id="TipoDeModulo">Query Processing Module Statistics:</div></center>
+                    <!-- Query processing module statistics -->
+                    <table  width="100%" border="2">
+                        <tr> <td bgcolor="white"><div id="Statistic">Arrival Rate(lambda): 0.4946418181479474</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Exit Rate(mu): 0.3706409910045507</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Busy time(rho): 0.1334557780042937</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Queue Size(Lq): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Clients in Service(Ls): 1.334557780042937</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Clients in Module(L): 1.334557780042937</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Queue(Wq): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Service(Ws): 2.6980286160192195</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(W): 2.6980286160192195</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(DDL): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(UPDATE)): 1.6051256119257549</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(JOIN): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(SELECT): 3.790931620112684</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Idle Time: 2.210323134491586</div></td> </tr>
+                    </table>
+                    <!-- End of query processing module statistics -->
+                </td>
+                <td width="0" height="150" valign="top" bgcolor="#add8e6"><center><div id="TipoDeModulo">Transactions Module:</div></center>
+                    <!-- Transactions module statistics-->
+                    <table  width="100%" border="2">
+                        <tr> <td bgcolor="white"><div id="Statistic"> Rate(lambda): 0.3957134545183579</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Exit Rate(mu): 3.3333333333333304</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Busy time(rho): 0.011871403635550748</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Queue Size(Lq): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Clients in Service(Ls): 0.11871403635550747</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Clients in Module(L): 0.11871403635550747</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Queue(Wq): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Service(Ws): 0.30000000000000027</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(W): 0.30000000000000027</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(DDL): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(UPDATE)): 0.30000000000000004</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(JOIN): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(SELECT): 0.3000000000000007</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Idle Time: 8.953628441424382</div></td> </tr>
+                    </table>
+                    <!-- End of transactions module statistics-->
+                </td>
+                <td width="0" height="150" valign="top" bgcolor="#add8e6"><center><div id="TipoDeModulo">Executor Module Statistics:</div></center>
+                    <!-- Executor module statistics-->
+                    <table  width="100%" border="2">
+                        <tr> <td bgcolor="white"><div id="Statistic">Arrival Rate(lambda): 0.2967850908887684</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Exit Rate(mu): 1.4814814814814812</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Busy time(rho): 0.020032993634991874</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Queue Size(Lq): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Clients in Service(Ls): 0.20032993634991872</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Clients in Module(L): 0.20032993634991872</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Queue(Wq): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Service(Ws): 0.6750000000000002</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(W): 0.6750000000000002</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(DDL): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(UPDATE)): 1.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(JOIN): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(SELECT): 0.025000000000000355</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Idle Time: 4.26434318369353</div></td> </tr>
+                    </table>
+                    <!-- End of executor module statistics -->
+            </tr>
+            <!-- End of module statistics -->
+            </td>
+            <td width="0" height="80" valign="top" bgcolor="#add8e6"><div id="Subtitle">Query Statistics:</div>
+                <!-- Query statistics -->
+                <table  width="100%" border="2">
+                    <tr> <td bgcolor="white"><div id="Statistic">Discarded Connections: 0</div> </td> </tr>
+                    <tr> <td bgcolor="white"><div id="Statistic">Total Connection: 6</div> </td> </tr>
+                    <tr> <td bgcolor="white"><div id="Statistic">Average Connections Life Time: 0.3375000000000001</div> </td> </tr>
+                </table>
+                <!-- End of query statistics-->
+            </td>
+        </table>
+    </div>
+        <!-- -->
+        <!-- -->
+        <!-- End of page-->        <div id="Run5" style="display:none">
+
+        <a href="#" onclick="return show('Run4','Run5');"><div id="ShowPage">Show page 4</div></a>
+<a href="#" onclick="return show('Run6','Run5');"><div id="ShowPage">Show page 6</div></a>
+
+        <table border=1 width="100%" cellspacing="0" cellpadding="2">
+            <tr>
+                <!-- Width,     height,     color-->
+                <td colspan="6" height="40" bgcolor="#add8e6"><center><div id="TituloDePagina"> Statistics of run 5 </div></center></td>
+            </tr>
+            <tr>
+
+                <td colspan="6" height="10"></td>
+            </tr>
+            <tr>
+                <!-- Parameters subtitle -->
+                <td colspan="6" height="10" bgcolor="#add8e6"><div id="Subtitle">Execution parameters:  <div id="TipoDeModulo">Maximum number of connections: 10, Query timeout:  10.0  , Query Processing Module Servers: 10, Transactions Module Servers: 10, Executor Module Servers:   10.  </div></div></td>
+            </tr>
+            <tr>
+                <!-- Space between parameters-->
+                <td colspan="6" height="10"></td>
+            </tr>
+            <tr>
+                <!-- Subtitles for modules-->
+                <td colspan="6" height="10" bgcolor="#add8e6"><div id="Subtitle">Module Statistics:</div></td>
+            </tr>
+            <!-- Modules-->
+            <tr>
+                <td width="0" height="150" valign="top" bgcolor="#add8e6"><center><div id="TipoDeModulo">Connections Module Statistics:</div></center>
+                    <!-- Connections module statistics -->
+                    <table  width="100%" border="2">
+                        <tr> <td bgcolor="white"><div id="Statistic">Arrival Rate(lambda): 0.4948803847323877</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Exit Rate(mu): 0.20700955126088957</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Busy time(rho): 0.23906161900167636</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Queue Size(Lq): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Clients in Service(Ls): 2.3906161900167633</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Clients in Module(L): 2.3906161900167633</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Queue(Wq): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Service(Ws): 4.830694979574744</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(W): 4.830694979574744</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(DDL): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(UPDATE)): 4.6349836383256955</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(JOIN): 5.222117662072842</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(SELECT): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Idle Time: 0.0</div></td> </tr>
+                    </table>
+                    <!-- End of connections module statistics -->
+                </td>
+                <td width="0" height="150" valign="top" bgcolor="#add8e6"><center><div id="TipoDeModulo">Process Module Statistics:</div></center>
+                    <!-- Process module statistics -->
+                    <table  width="100%" border="2">
+                        <tr> <td bgcolor="white"><div id="Statistic">Arrival Rate(lambda): 0.4948803847323877</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Exit Rate(mu): 0.7023062590386512</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Busy time(rho): 0.7046503976908913</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Queue Size(Lq): 0.12124784007769895</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Clients in Service(Ls): 0.7046503976908913</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Clients in Module(L): 0.8258982377685903</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Queue(Wq): 0.24500433603418154</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Service(Ws): 1.4238802333455571</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(W): 1.6688845693797387</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(DDL): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(UPDATE)): 1.2831818805059596</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(JOIN): 2.147393469031466</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(SELECT): 1.4832721478238413</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Idle Time: 0.9892729029665838</div></td> </tr>
+                    </table>
+                    <!-- End of process module statistics-->
+                </td>
+                <td width="0" height="150" valign="top" bgcolor="#add8e6"><center><div id="TipoDeModulo">Query Processing Module Statistics:</div></center>
+                    <!-- Query processing module statistics -->
+                    <table  width="100%" border="2">
+                        <tr> <td bgcolor="white"><div id="Statistic">Arrival Rate(lambda): 0.4948803847323877</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Exit Rate(mu): 0.6303294518507558</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Busy time(rho): 0.07851138532069757</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Queue Size(Lq): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Clients in Service(Ls): 0.7851138532069756</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Clients in Module(L): 0.7851138532069756</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Queue(Wq): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Service(Ws): 1.5864719585350608</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(W): 1.5864719585350608</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(DDL): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(UPDATE)): 2.032561626686566</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(JOIN): 0.3648354578203019</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(SELECT): 3.137565623661568</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Idle Time: 3.392266843497222</div></td> </tr>
+                    </table>
+                    <!-- End of query processing module statistics -->
+                </td>
+                <td width="0" height="150" valign="top" bgcolor="#add8e6"><center><div id="TipoDeModulo">Transactions Module:</div></center>
+                    <!-- Transactions module statistics-->
+                    <table  width="100%" border="2">
+                        <tr> <td bgcolor="white"><div id="Statistic"> Rate(lambda): 0.4948803847323877</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Exit Rate(mu): 0.7692307692307692</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Busy time(rho): 0.0643344500152104</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Queue Size(Lq): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Clients in Service(Ls): 0.6433445001521041</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Clients in Module(L): 0.6433445001521041</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Queue(Wq): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Service(Ws): 1.3</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(W): 1.3</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(DDL): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(UPDATE)): 0.2999999999999998</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(JOIN): 1.3000000000000003</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(SELECT): 3.3</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Idle Time: 5.314665453450812</div></td> </tr>
+                    </table>
+                    <!-- End of transactions module statistics-->
+                </td>
+                <td width="0" height="150" valign="top" bgcolor="#add8e6"><center><div id="TipoDeModulo">Executor Module Statistics:</div></center>
+                    <!-- Executor module statistics-->
+                    <table  width="100%" border="2">
+                        <tr> <td bgcolor="white"><div id="Statistic">Arrival Rate(lambda): 0.4948803847323877</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Exit Rate(mu): 0.9612303748798464</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Busy time(rho): 0.05148405602499272</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Queue Size(Lq): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Clients in Service(Ls): 0.5148405602499272</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Clients in Module(L): 0.5148405602499272</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Queue(Wq): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Service(Ws): 1.040333333333333</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(W): 1.040333333333333</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(DDL): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(UPDATE)): 1.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(JOIN): 1.1209999999999996</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(SELECT): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Idle Time: 3.870040434796854</div></td> </tr>
+                    </table>
+                    <!-- End of executor module statistics -->
+            </tr>
+            <!-- End of module statistics -->
+            </td>
+            <td width="0" height="80" valign="top" bgcolor="#add8e6"><div id="Subtitle">Query Statistics:</div>
+                <!-- Query statistics -->
+                <table  width="100%" border="2">
+                    <tr> <td bgcolor="white"><div id="Statistic">Discarded Connections: 0</div> </td> </tr>
+                    <tr> <td bgcolor="white"><div id="Statistic">Total Connection: 5</div> </td> </tr>
+                    <tr> <td bgcolor="white"><div id="Statistic">Average Connections Life Time: 0.6241999999999999</div> </td> </tr>
+                </table>
+                <!-- End of query statistics-->
+            </td>
+        </table>
+    </div>
+        <!-- -->
+        <!-- -->
+        <!-- End of page-->        <div id="Run6" style="display:none">
+
+        <a href="#" onclick="return show('Run5','Run6');"><div id="ShowPage">Show page 5</div></a>
+<a href="#" onclick="return show('Run7','Run6');"><div id="ShowPage">Show page 7</div></a>
+
+        <table border=1 width="100%" cellspacing="0" cellpadding="2">
+            <tr>
+                <!-- Width,     height,     color-->
+                <td colspan="6" height="40" bgcolor="#add8e6"><center><div id="TituloDePagina"> Statistics of run 6 </div></center></td>
+            </tr>
+            <tr>
+
+                <td colspan="6" height="10"></td>
+            </tr>
+            <tr>
+                <!-- Parameters subtitle -->
+                <td colspan="6" height="10" bgcolor="#add8e6"><div id="Subtitle">Execution parameters:  <div id="TipoDeModulo">Maximum number of connections: 10, Query timeout:  10.0  , Query Processing Module Servers: 10, Transactions Module Servers: 10, Executor Module Servers:   10.  </div></div></td>
+            </tr>
+            <tr>
+                <!-- Space between parameters-->
+                <td colspan="6" height="10"></td>
+            </tr>
+            <tr>
+                <!-- Subtitles for modules-->
+                <td colspan="6" height="10" bgcolor="#add8e6"><div id="Subtitle">Module Statistics:</div></td>
+            </tr>
+            <!-- Modules-->
+            <tr>
+                <td width="0" height="150" valign="top" bgcolor="#add8e6"><center><div id="TipoDeModulo">Connections Module Statistics:</div></center>
+                    <!-- Connections module statistics -->
+                    <table  width="100%" border="2">
+                        <tr> <td bgcolor="white"><div id="Statistic">Arrival Rate(lambda): 0.8934476070208298</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Exit Rate(mu): 0.3689342783270939</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Busy time(rho): 0.2421698550408772</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Queue Size(Lq): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Clients in Service(Ls): 2.421698550408772</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Clients in Module(L): 2.421698550408772</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Queue(Wq): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Service(Ws): 2.710509862446039</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(W): 2.710509862446039</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(DDL): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(UPDATE)): 3.7272855567579084</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(JOIN): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(SELECT): 1.6937341681341698</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Idle Time: 0.0</div></td> </tr>
+                    </table>
+                    <!-- End of connections module statistics -->
+                </td>
+                <td width="0" height="150" valign="top" bgcolor="#add8e6"><center><div id="TipoDeModulo">Process Module Statistics:</div></center>
+                    <!-- Process module statistics -->
+                    <table  width="100%" border="2">
+                        <tr> <td bgcolor="white"><div id="Statistic">Arrival Rate(lambda): 0.7941756506851821</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Exit Rate(mu): 0.9449707512702561</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Busy time(rho): 0.8404235259320239</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Queue Size(Lq): 0.659131075629078</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Clients in Service(Ls): 0.8404235259320239</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Clients in Module(L): 1.4995546015611019</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Queue(Wq): 0.829956288713217</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Service(Ws): 1.0582338116346692</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(W): 1.8881901003478863</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(DDL): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(UPDATE)): 1.3709071517979898</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(JOIN): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(SELECT): 1.9916466900578655</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Idle Time: 1.1390561989713133</div></td> </tr>
+                    </table>
+                    <!-- End of process module statistics-->
+                </td>
+                <td width="0" height="150" valign="top" bgcolor="#add8e6"><center><div id="TipoDeModulo">Query Processing Module Statistics:</div></center>
+                    <!-- Query processing module statistics -->
+                    <table  width="100%" border="2">
+                        <tr> <td bgcolor="white"><div id="Statistic">Arrival Rate(lambda): 0.5956317380138866</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Exit Rate(mu): 0.7758875688960127</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Busy time(rho): 0.07676778980508647</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Queue Size(Lq): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Clients in Service(Ls): 0.7676778980508648</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Clients in Module(L): 0.7676778980508648</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Queue(Wq): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Service(Ws): 1.288846528915098</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(W): 1.288846528915098</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(DDL): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(UPDATE)): 1.032252461423436</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(JOIN): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(SELECT): 1.374377884745652</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Idle Time: 3.8772649919378965</div></td> </tr>
+                    </table>
+                    <!-- End of query processing module statistics -->
+                </td>
+                <td width="0" height="150" valign="top" bgcolor="#add8e6"><center><div id="TipoDeModulo">Transactions Module:</div></center>
+                    <!-- Transactions module statistics-->
+                    <table  width="100%" border="2">
+                        <tr> <td bgcolor="white"><div id="Statistic"> Rate(lambda): 0.39708782534259107</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Exit Rate(mu): 3.333333333333334</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Busy time(rho): 0.011912634760277728</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Queue Size(Lq): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Clients in Service(Ls): 0.1191263476027773</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Clients in Module(L): 0.1191263476027773</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Queue(Wq): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Service(Ws): 0.29999999999999993</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(W): 0.29999999999999993</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(DDL): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(UPDATE)): 0.2999999999999998</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(JOIN): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(SELECT): 0.30000000000000004</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Idle Time: 6.399449172000309</div></td> </tr>
+                    </table>
+                    <!-- End of transactions module statistics-->
+                </td>
+                <td width="0" height="150" valign="top" bgcolor="#add8e6"><center><div id="TipoDeModulo">Executor Module Statistics:</div></center>
+                    <!-- Executor module statistics-->
+                    <table  width="100%" border="2">
+                        <tr> <td bgcolor="white"><div id="Statistic">Arrival Rate(lambda): 0.19854391267129554</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Exit Rate(mu): 1.9920318725099602</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Busy time(rho): 0.009966904416099036</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Queue Size(Lq): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Clients in Service(Ls): 0.09966904416099036</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Clients in Module(L): 0.09966904416099036</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Queue(Wq): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Service(Ws): 0.502</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(W): 0.502</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(DDL): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(UPDATE)): 1.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(JOIN): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(SELECT): 0.0040000000000000036</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Idle Time: 2.739027234866061</div></td> </tr>
+                    </table>
+                    <!-- End of executor module statistics -->
+            </tr>
+            <!-- End of module statistics -->
+            </td>
+            <td width="0" height="80" valign="top" bgcolor="#add8e6"><div id="Subtitle">Query Statistics:</div>
+                <!-- Query statistics -->
+                <table  width="100%" border="2">
+                    <tr> <td bgcolor="white"><div id="Statistic">Discarded Connections: 0</div> </td> </tr>
+                    <tr> <td bgcolor="white"><div id="Statistic">Total Connection: 9</div> </td> </tr>
+                    <tr> <td bgcolor="white"><div id="Statistic">Average Connections Life Time: 0.11155555555555556</div> </td> </tr>
+                </table>
+                <!-- End of query statistics-->
+            </td>
+        </table>
+    </div>
+        <!-- -->
+        <!-- -->
+        <!-- End of page-->        <div id="Run7" style="display:none">
+
+        <a href="#" onclick="return show('Run6','Run7');"><div id="ShowPage">Show page 6</div></a>
+<a href="#" onclick="return show('Run8','Run7');"><div id="ShowPage">Show page 8</div></a>
+
+        <table border=1 width="100%" cellspacing="0" cellpadding="2">
+            <tr>
+                <!-- Width,     height,     color-->
+                <td colspan="6" height="40" bgcolor="#add8e6"><center><div id="TituloDePagina"> Statistics of run 7 </div></center></td>
+            </tr>
+            <tr>
+
+                <td colspan="6" height="10"></td>
+            </tr>
+            <tr>
+                <!-- Parameters subtitle -->
+                <td colspan="6" height="10" bgcolor="#add8e6"><div id="Subtitle">Execution parameters:  <div id="TipoDeModulo">Maximum number of connections: 10, Query timeout:  10.0  , Query Processing Module Servers: 10, Transactions Module Servers: 10, Executor Module Servers:   10.  </div></div></td>
+            </tr>
+            <tr>
+                <!-- Space between parameters-->
+                <td colspan="6" height="10"></td>
+            </tr>
+            <tr>
+                <!-- Subtitles for modules-->
+                <td colspan="6" height="10" bgcolor="#add8e6"><div id="Subtitle">Module Statistics:</div></td>
+            </tr>
+            <!-- Modules-->
+            <tr>
+                <td width="0" height="150" valign="top" bgcolor="#add8e6"><center><div id="TipoDeModulo">Connections Module Statistics:</div></center>
+                    <!-- Connections module statistics -->
+                    <table  width="100%" border="2">
+                        <tr> <td bgcolor="white"><div id="Statistic">Arrival Rate(lambda): 0.7502074505310037</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Exit Rate(mu): 0.1851888073134535</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Busy time(rho): 0.4051040996560827</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Queue Size(Lq): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Clients in Service(Ls): 4.051040996560827</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Clients in Module(L): 4.051040996560827</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Queue(Wq): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Service(Ws): 5.399894380805554</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(W): 5.399894380805554</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(DDL): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(UPDATE)): 5.399894380805554</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(JOIN): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(SELECT): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Idle Time: 0.0</div></td> </tr>
+                    </table>
+                    <!-- End of connections module statistics -->
+                </td>
+                <td width="0" height="150" valign="top" bgcolor="#add8e6"><center><div id="TipoDeModulo">Process Module Statistics:</div></center>
+                    <!-- Process module statistics -->
+                    <table  width="100%" border="2">
+                        <tr> <td bgcolor="white"><div id="Statistic">Arrival Rate(lambda): 0.7502074505310037</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Exit Rate(mu): 0.8706934740972082</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Busy time(rho): 0.8616206194824967</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Queue Size(Lq): 0.5106555422955678</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Clients in Service(Ls): 0.8616206194824966</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Clients in Module(L): 1.3722761617780643</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Queue(Wq): 0.6806857782259041</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Service(Ws): 1.1485098140156216</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(W): 1.8291955922415257</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(DDL): 0.7552325736196419</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(UPDATE)): 1.9313967701267272</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(JOIN): 2.2993695120181075</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(SELECT): 1.7584084155398445</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Idle Time: 2.341806196039005</div></td> </tr>
+                    </table>
+                    <!-- End of process module statistics-->
+                </td>
+                <td width="0" height="150" valign="top" bgcolor="#add8e6"><center><div id="TipoDeModulo">Query Processing Module Statistics:</div></center>
+                    <!-- Query processing module statistics -->
+                    <table  width="100%" border="2">
+                        <tr> <td bgcolor="white"><div id="Statistic">Arrival Rate(lambda): 0.5626555878982528</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Exit Rate(mu): 0.47416489716488014</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Busy time(rho): 0.11866242972908263</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Queue Size(Lq): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Clients in Service(Ls): 1.1866242972908263</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Clients in Module(L): 1.1866242972908263</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Queue(Wq): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Service(Ws): 2.108970963433155</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(W): 2.108970963433155</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(DDL): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(UPDATE)): 2.1425416517042994</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(JOIN): 2.6381914067763095</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(SELECT): 1.512609143547711</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Idle Time: 3.14276151383603</div></td> </tr>
+                    </table>
+                    <!-- End of query processing module statistics -->
+                </td>
+                <td width="0" height="150" valign="top" bgcolor="#add8e6"><center><div id="TipoDeModulo">Transactions Module:</div></center>
+                    <!-- Transactions module statistics-->
+                    <table  width="100%" border="2">
+                        <tr> <td bgcolor="white"><div id="Statistic"> Rate(lambda): 0.37510372526550184</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Exit Rate(mu): 1.2499999999999996</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Busy time(rho): 0.030008298021240155</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Queue Size(Lq): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Clients in Service(Ls): 0.3000829802124016</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Clients in Module(L): 0.3000829802124016</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Queue(Wq): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Service(Ws): 0.8000000000000003</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(W): 0.8000000000000003</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(DDL): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(UPDATE)): 0.2999999999999998</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(JOIN): 1.3000000000000007</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(SELECT): 1.3000000000000007</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Idle Time: 6.757469391120667</div></td> </tr>
+                    </table>
+                    <!-- End of transactions module statistics-->
+                </td>
+                <td width="0" height="150" valign="top" bgcolor="#add8e6"><center><div id="TipoDeModulo">Executor Module Statistics:</div></center>
+                    <!-- Executor module statistics-->
+                    <table  width="100%" border="2">
+                        <tr> <td bgcolor="white"><div id="Statistic">Arrival Rate(lambda): 0.37510372526550184</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Exit Rate(mu): 1.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Busy time(rho): 0.037510372526550186</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Queue Size(Lq): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Clients in Service(Ls): 0.37510372526550184</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Clients in Module(L): 0.37510372526550184</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Queue(Wq): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Service(Ws): 1.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(W): 1.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(DDL): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(UPDATE)): 1.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(JOIN): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(SELECT): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Idle Time: 2.639490373352558</div></td> </tr>
+                    </table>
+                    <!-- End of executor module statistics -->
+            </tr>
+            <!-- End of module statistics -->
+            </td>
+            <td width="0" height="80" valign="top" bgcolor="#add8e6"><div id="Subtitle">Query Statistics:</div>
+                <!-- Query statistics -->
+                <table  width="100%" border="2">
+                    <tr> <td bgcolor="white"><div id="Statistic">Discarded Connections: 0</div> </td> </tr>
+                    <tr> <td bgcolor="white"><div id="Statistic">Total Connection: 8</div> </td> </tr>
+                    <tr> <td bgcolor="white"><div id="Statistic">Average Connections Life Time: 0.25</div> </td> </tr>
+                </table>
+                <!-- End of query statistics-->
+            </td>
+        </table>
+    </div>
+        <!-- -->
+        <!-- -->
+        <!-- End of page-->        <div id="Run8" style="display:none">
+
+        <a href="#" onclick="return show('Run7','Run8');"><div id="ShowPage">Show page 7</div></a>
+<a href="#" onclick="return show('Run9','Run8');"><div id="ShowPage">Show page 9</div></a>
+
+        <table border=1 width="100%" cellspacing="0" cellpadding="2">
+            <tr>
+                <!-- Width,     height,     color-->
+                <td colspan="6" height="40" bgcolor="#add8e6"><center><div id="TituloDePagina"> Statistics of run 8 </div></center></td>
+            </tr>
+            <tr>
+
+                <td colspan="6" height="10"></td>
+            </tr>
+            <tr>
+                <!-- Parameters subtitle -->
+                <td colspan="6" height="10" bgcolor="#add8e6"><div id="Subtitle">Execution parameters:  <div id="TipoDeModulo">Maximum number of connections: 10, Query timeout:  10.0  , Query Processing Module Servers: 10, Transactions Module Servers: 10, Executor Module Servers:   10.  </div></div></td>
+            </tr>
+            <tr>
+                <!-- Space between parameters-->
+                <td colspan="6" height="10"></td>
+            </tr>
+            <tr>
+                <!-- Subtitles for modules-->
+                <td colspan="6" height="10" bgcolor="#add8e6"><div id="Subtitle">Module Statistics:</div></td>
+            </tr>
+            <!-- Modules-->
+            <tr>
+                <td width="0" height="150" valign="top" bgcolor="#add8e6"><center><div id="TipoDeModulo">Connections Module Statistics:</div></center>
+                    <!-- Connections module statistics -->
+                    <table  width="100%" border="2">
+                        <tr> <td bgcolor="white"><div id="Statistic">Arrival Rate(lambda): 0.49548188139953175</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Exit Rate(mu): 0.14569450997750055</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Busy time(rho): 0.3400827398891341</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Queue Size(Lq): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Clients in Service(Ls): 3.4008273988913413</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Clients in Module(L): 3.4008273988913413</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Queue(Wq): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Service(Ws): 6.8636766076802</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(W): 6.8636766076802</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(DDL): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(UPDATE)): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(JOIN): 6.8636766076802</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(SELECT): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Idle Time: 0.0</div></td> </tr>
+                    </table>
+                    <!-- End of connections module statistics -->
+                </td>
+                <td width="0" height="150" valign="top" bgcolor="#add8e6"><center><div id="TipoDeModulo">Process Module Statistics:</div></center>
+                    <!-- Process module statistics -->
+                    <table  width="100%" border="2">
+                        <tr> <td bgcolor="white"><div id="Statistic">Arrival Rate(lambda): 0.3963855051196254</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Exit Rate(mu): 0.7286867119385432</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Busy time(rho): 0.5439724625485639</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Queue Size(Lq): 0.020454017809217784</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Clients in Service(Ls): 0.543972462548564</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Clients in Module(L): 0.5644264803577818</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Queue(Wq): 0.051601326347806176</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Service(Ws): 1.3723318726914553</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(W): 1.4239331990392614</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(DDL): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(UPDATE)): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(JOIN): 1.3035993122901193</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(SELECT): 1.5442670857884038</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Idle Time: 0.48919166076522</div></td> </tr>
+                    </table>
+                    <!-- End of process module statistics-->
+                </td>
+                <td width="0" height="150" valign="top" bgcolor="#add8e6"><center><div id="TipoDeModulo">Query Processing Module Statistics:</div></center>
+                    <!-- Query processing module statistics -->
+                    <table  width="100%" border="2">
+                        <tr> <td bgcolor="white"><div id="Statistic">Arrival Rate(lambda): 0.3963855051196254</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Exit Rate(mu): 0.5012145822834044</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Busy time(rho): 0.07908499056707312</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Queue Size(Lq): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Clients in Service(Ls): 0.7908499056707313</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Clients in Module(L): 0.7908499056707313</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Queue(Wq): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Service(Ws): 1.9951534439486134</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(W): 1.9951534439486134</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(DDL): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(UPDATE)): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(JOIN): 2.075823344041034</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(SELECT): 1.914483543856193</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Idle Time: 1.449710298984787</div></td> </tr>
+                    </table>
+                    <!-- End of query processing module statistics -->
+                </td>
+                <td width="0" height="150" valign="top" bgcolor="#add8e6"><center><div id="TipoDeModulo">Transactions Module:</div></center>
+                    <!-- Transactions module statistics-->
+                    <table  width="100%" border="2">
+                        <tr> <td bgcolor="white"><div id="Statistic"> Rate(lambda): 0.3963855051196254</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Exit Rate(mu): 0.5555555555555557</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Busy time(rho): 0.07134939092153254</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Queue Size(Lq): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Clients in Service(Ls): 0.7134939092153255</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Clients in Module(L): 0.7134939092153255</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Queue(Wq): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Service(Ws): 1.7999999999999996</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(W): 1.7999999999999996</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(DDL): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(UPDATE)): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(JOIN): 1.2999999999999998</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(SELECT): 2.2999999999999994</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Idle Time: 4.171664397087958</div></td> </tr>
+                    </table>
+                    <!-- End of transactions module statistics-->
+                </td>
+                <td width="0" height="150" valign="top" bgcolor="#add8e6"><center><div id="TipoDeModulo">Executor Module Statistics:</div></center>
+                    <!-- Executor module statistics-->
+                    <table  width="100%" border="2">
+                        <tr> <td bgcolor="white"><div id="Statistic">Arrival Rate(lambda): 0.3963855051196254</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Exit Rate(mu): 0.4637143519591932</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Busy time(rho): 0.0854805341790472</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Queue Size(Lq): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Clients in Service(Ls): 0.8548053417904721</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Clients in Module(L): 0.8548053417904721</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Queue(Wq): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Service(Ws): 2.1565</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(W): 2.1565</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(DDL): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(UPDATE)): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(JOIN): 2.1565</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(SELECT): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Idle Time: 0.12296916353223164</div></td> </tr>
+                    </table>
+                    <!-- End of executor module statistics -->
+            </tr>
+            <!-- End of module statistics -->
+            </td>
+            <td width="0" height="80" valign="top" bgcolor="#add8e6"><div id="Subtitle">Query Statistics:</div>
+                <!-- Query statistics -->
+                <table  width="100%" border="2">
+                    <tr> <td bgcolor="white"><div id="Statistic">Discarded Connections: 0</div> </td> </tr>
+                    <tr> <td bgcolor="white"><div id="Statistic">Total Connection: 5</div> </td> </tr>
+                    <tr> <td bgcolor="white"><div id="Statistic">Average Connections Life Time: 0.8625999999999999</div> </td> </tr>
+                </table>
+                <!-- End of query statistics-->
+            </td>
+        </table>
+    </div>
+        <!-- -->
+        <!-- -->
+        <!-- End of page-->        <div id="Run9" style="display:none">
+
+        <a href="#" onclick="return show('Run8','Run9');"><div id="ShowPage">Show page 8</div></a>
+<a href="#" onclick="return show('Run10','Run9');"><div id="ShowPage">Show page 10</div></a>
+
+        <table border=1 width="100%" cellspacing="0" cellpadding="2">
+            <tr>
+                <!-- Width,     height,     color-->
+                <td colspan="6" height="40" bgcolor="#add8e6"><center><div id="TituloDePagina"> Statistics of run 9 </div></center></td>
+            </tr>
+            <tr>
+
+                <td colspan="6" height="10"></td>
+            </tr>
+            <tr>
+                <!-- Parameters subtitle -->
+                <td colspan="6" height="10" bgcolor="#add8e6"><div id="Subtitle">Execution parameters:  <div id="TipoDeModulo">Maximum number of connections: 10, Query timeout:  10.0  , Query Processing Module Servers: 10, Transactions Module Servers: 10, Executor Module Servers:   10.  </div></div></td>
+            </tr>
+            <tr>
+                <!-- Space between parameters-->
+                <td colspan="6" height="10"></td>
+            </tr>
+            <tr>
+                <!-- Subtitles for modules-->
+                <td colspan="6" height="10" bgcolor="#add8e6"><div id="Subtitle">Module Statistics:</div></td>
+            </tr>
+            <!-- Modules-->
+            <tr>
+                <td width="0" height="150" valign="top" bgcolor="#add8e6"><center><div id="TipoDeModulo">Connections Module Statistics:</div></center>
+                    <!-- Connections module statistics -->
+                    <table  width="100%" border="2">
+                        <tr> <td bgcolor="white"><div id="Statistic">Arrival Rate(lambda): 0.3</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Exit Rate(mu): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Busy time(rho): Infinity</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Queue Size(Lq): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Clients in Service(Ls): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Clients in Module(L): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Queue(Wq): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Service(Ws): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(W): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(DDL): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(UPDATE)): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(JOIN): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(SELECT): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Idle Time: 0.0</div></td> </tr>
+                    </table>
+                    <!-- End of connections module statistics -->
+                </td>
+                <td width="0" height="150" valign="top" bgcolor="#add8e6"><center><div id="TipoDeModulo">Process Module Statistics:</div></center>
+                    <!-- Process module statistics -->
+                    <table  width="100%" border="2">
+                        <tr> <td bgcolor="white"><div id="Statistic">Arrival Rate(lambda): 0.3</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Exit Rate(mu): 0.9155458338713393</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Busy time(rho): 0.32767338226144854</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Queue Size(Lq): 0.09537539919601823</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Clients in Service(Ls): 0.32767338226144854</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Clients in Module(L): 0.42304878145746677</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Queue(Wq): 0.31791799732006076</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Service(Ws): 1.0922446075381618</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(W): 1.4101626048582225</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(DDL): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(UPDATE)): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(JOIN): 1.5310108970232976</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(SELECT): 1.2893143126931474</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Idle Time: 6.565023145544883</div></td> </tr>
+                    </table>
+                    <!-- End of process module statistics-->
+                </td>
+                <td width="0" height="150" valign="top" bgcolor="#add8e6"><center><div id="TipoDeModulo">Query Processing Module Statistics:</div></center>
+                    <!-- Query processing module statistics -->
+                    <table  width="100%" border="2">
+                        <tr> <td bgcolor="white"><div id="Statistic">Arrival Rate(lambda): 0.2</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Exit Rate(mu): 0.5655457795590222</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Busy time(rho): 0.03536406905130611</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Queue Size(Lq): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Clients in Service(Ls): 0.353640690513061</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Clients in Module(L): 0.353640690513061</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Queue(Wq): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Service(Ws): 1.768203452565305</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(W): 1.768203452565305</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(DDL): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(UPDATE)): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(JOIN): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(SELECT): 1.768203452565305</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Idle Time: 7.617144902696023</div></td> </tr>
+                    </table>
+                    <!-- End of query processing module statistics -->
+                </td>
+                <td width="0" height="150" valign="top" bgcolor="#add8e6"><center><div id="TipoDeModulo">Transactions Module:</div></center>
+                    <!-- Transactions module statistics-->
+                    <table  width="100%" border="2">
+                        <tr> <td bgcolor="white"><div id="Statistic"> Rate(lambda): 0.1</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Exit Rate(mu): 0.18867924528301888</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Busy time(rho): 0.053000000000000005</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Queue Size(Lq): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Clients in Service(Ls): 0.53</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Clients in Module(L): 0.53</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Queue(Wq): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Service(Ws): 5.3</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(W): 5.3</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(DDL): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(UPDATE)): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(JOIN): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(SELECT): 5.3</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Idle Time: 3.099057446573691</div></td> </tr>
+                    </table>
+                    <!-- End of transactions module statistics-->
+                </td>
+                <td width="0" height="150" valign="top" bgcolor="#add8e6"><center><div id="TipoDeModulo">Executor Module Statistics:</div></center>
+                    <!-- Executor module statistics-->
+                    <table  width="100%" border="2">
+                        <tr> <td bgcolor="white"><div id="Statistic">Arrival Rate(lambda): 0.1</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Exit Rate(mu): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Busy time(rho): Infinity</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Queue Size(Lq): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Clients in Service(Ls): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Clients in Module(L): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Queue(Wq): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Service(Ws): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(W): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(DDL): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(UPDATE)): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(JOIN): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(SELECT): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Idle Time: 0.0</div></td> </tr>
+                    </table>
+                    <!-- End of executor module statistics -->
+            </tr>
+            <!-- End of module statistics -->
+            </td>
+            <td width="0" height="80" valign="top" bgcolor="#add8e6"><div id="Subtitle">Query Statistics:</div>
+                <!-- Query statistics -->
+                <table  width="100%" border="2">
+                    <tr> <td bgcolor="white"><div id="Statistic">Discarded Connections: 0</div> </td> </tr>
+                    <tr> <td bgcolor="white"><div id="Statistic">Total Connection: 3</div> </td> </tr>
+                    <tr> <td bgcolor="white"><div id="Statistic">Average Connections Life Time: 0.0</div> </td> </tr>
+                </table>
+                <!-- End of query statistics-->
+            </td>
+        </table>
+    </div>
+        <!-- -->
+        <!-- -->
+        <!-- End of page-->        <div id="Run10" style="display:none">
+
+        <a href="#" onclick="return show('Run9','Run10');"><div id="ShowPage">Show page 9</div></a>
+<a href="#" onclick="return show('Run11','Run10');"><div id="ShowPage">Show page 11</div></a>
+
+        <table border=1 width="100%" cellspacing="0" cellpadding="2">
+            <tr>
+                <!-- Width,     height,     color-->
+                <td colspan="6" height="40" bgcolor="#add8e6"><center><div id="TituloDePagina"> Statistics of run 10 </div></center></td>
+            </tr>
+            <tr>
+
+                <td colspan="6" height="10"></td>
+            </tr>
+            <tr>
+                <!-- Parameters subtitle -->
+                <td colspan="6" height="10" bgcolor="#add8e6"><div id="Subtitle">Execution parameters:  <div id="TipoDeModulo">Maximum number of connections: 10, Query timeout:  10.0  , Query Processing Module Servers: 10, Transactions Module Servers: 10, Executor Module Servers:   10.  </div></div></td>
+            </tr>
+            <tr>
+                <!-- Space between parameters-->
+                <td colspan="6" height="10"></td>
+            </tr>
+            <tr>
+                <!-- Subtitles for modules-->
+                <td colspan="6" height="10" bgcolor="#add8e6"><div id="Subtitle">Module Statistics:</div></td>
+            </tr>
+            <!-- Modules-->
+            <tr>
+                <td width="0" height="150" valign="top" bgcolor="#add8e6"><center><div id="TipoDeModulo">Connections Module Statistics:</div></center>
+                    <!-- Connections module statistics -->
+                    <table  width="100%" border="2">
+                        <tr> <td bgcolor="white"><div id="Statistic">Arrival Rate(lambda): 0.681175316593331</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Exit Rate(mu): 0.1762423486623571</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Busy time(rho): 0.38649922777545265</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Queue Size(Lq): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Clients in Service(Ls): 3.864992277754526</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Clients in Module(L): 3.864992277754526</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Queue(Wq): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Service(Ws): 5.674005184280581</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(W): 5.674005184280581</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(DDL): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(UPDATE)): 6.866690711213858</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(JOIN): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(SELECT): 3.2886341304140285</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Idle Time: 0.0</div></td> </tr>
+                    </table>
+                    <!-- End of connections module statistics -->
+                </td>
+                <td width="0" height="150" valign="top" bgcolor="#add8e6"><center><div id="TipoDeModulo">Process Module Statistics:</div></center>
+                    <!-- Process module statistics -->
+                    <table  width="100%" border="2">
+                        <tr> <td bgcolor="white"><div id="Statistic">Arrival Rate(lambda): 0.681175316593331</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Exit Rate(mu): 0.7470978112441967</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Busy time(rho): 0.9117618956196911</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Queue Size(Lq): 0.3513692998078268</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Clients in Service(Ls): 0.9117618956196911</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Clients in Module(L): 1.263131195427518</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Queue(Wq): 0.515827997944908</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Service(Ws): 1.3385128224838816</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(W): 1.8543408204287897</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(DDL): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(UPDATE)): 2.048179253414729</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(JOIN): 2.167887292939575</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(SELECT): 1.5559868966059216</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Idle Time: 0.5959066124721181</div></td> </tr>
+                    </table>
+                    <!-- End of process module statistics-->
+                </td>
+                <td width="0" height="150" valign="top" bgcolor="#add8e6"><center><div id="TipoDeModulo">Query Processing Module Statistics:</div></center>
+                    <!-- Query processing module statistics -->
+                    <table  width="100%" border="2">
+                        <tr> <td bgcolor="white"><div id="Statistic">Arrival Rate(lambda): 0.681175316593331</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Exit Rate(mu): 0.5044186179995394</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Busy time(rho): 0.13504166822683636</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Queue Size(Lq): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Clients in Service(Ls): 1.3504166822683636</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Clients in Module(L): 1.3504166822683636</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Queue(Wq): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Service(Ws): 1.982480353254751</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(W): 1.982480353254751</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(DDL): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(UPDATE)): 3.023818395356983</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(JOIN): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(SELECT): 1.288254991853263</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Idle Time: 2.67171141488584</div></td> </tr>
+                    </table>
+                    <!-- End of query processing module statistics -->
+                </td>
+                <td width="0" height="150" valign="top" bgcolor="#add8e6"><center><div id="TipoDeModulo">Transactions Module:</div></center>
+                    <!-- Transactions module statistics-->
+                    <table  width="100%" border="2">
+                        <tr> <td bgcolor="white"><div id="Statistic"> Rate(lambda): 0.486553797566665</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Exit Rate(mu): 3.3333333333333353</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Busy time(rho): 0.014596613926999943</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Queue Size(Lq): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Clients in Service(Ls): 0.1459661392699994</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Clients in Module(L): 0.1459661392699994</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Queue(Wq): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Service(Ws): 0.2999999999999998</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(W): 0.2999999999999998</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(DDL): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(UPDATE)): 0.2999999999999998</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(JOIN): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(SELECT): 0.2999999999999998</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Idle Time: 6.400249624263004</div></td> </tr>
+                    </table>
+                    <!-- End of transactions module statistics-->
+                </td>
+                <td width="0" height="150" valign="top" bgcolor="#add8e6"><center><div id="TipoDeModulo">Executor Module Statistics:</div></center>
+                    <!-- Executor module statistics-->
+                    <table  width="100%" border="2">
+                        <tr> <td bgcolor="white"><div id="Statistic">Arrival Rate(lambda): 0.291932278539999</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Exit Rate(mu): 0.9737098344693282</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Busy time(rho): 0.02998144500605789</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Queue Size(Lq): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Clients in Service(Ls): 0.29981445006057894</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Clients in Module(L): 0.29981445006057894</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Queue(Wq): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Service(Ws): 1.027</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(W): 1.027</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(DDL): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(UPDATE)): 1.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(JOIN): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(SELECT): 1.081</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Idle Time: 3.550462652057526</div></td> </tr>
+                    </table>
+                    <!-- End of executor module statistics -->
+            </tr>
+            <!-- End of module statistics -->
+            </td>
+            <td width="0" height="80" valign="top" bgcolor="#add8e6"><div id="Subtitle">Query Statistics:</div>
+                <!-- Query statistics -->
+                <table  width="100%" border="2">
+                    <tr> <td bgcolor="white"><div id="Statistic">Discarded Connections: 0</div> </td> </tr>
+                    <tr> <td bgcolor="white"><div id="Statistic">Total Connection: 7</div> </td> </tr>
+                    <tr> <td bgcolor="white"><div id="Statistic">Average Connections Life Time: 0.4401428571428571</div> </td> </tr>
+                </table>
+                <!-- End of query statistics-->
+            </td>
+        </table>
+    </div>
+        <!-- -->
+        <!-- -->
+        <!-- End of page-->        <div id="Run11" style="display:none">
+
+        <a href="#" onclick="return show('Run10','Run11');"><div id="ShowPage">Show page 10</div></a>
+
+        <table border=1 width="100%" cellspacing="0" cellpadding="2">
+            <tr>
+                <!-- Width,     height,     color-->
+                <td colspan="6" height="40" bgcolor="#add8e6"><center><div id="TituloDePagina"> General statistics </div></center></td>
+            </tr>
+            <tr>
+
+                <td colspan="6" height="10"></td>
+            </tr>
+            <tr>
+                <!-- Parameters subtitle -->
+                <td colspan="6" height="10" bgcolor="#add8e6"><div id="Subtitle">Execution parameters:  <div id="TipoDeModulo">Maximum number of connections: 10, Query timeout:  10.0  , Query Processing Module Servers: 10, Transactions Module Servers: 10, Executor Module Servers:   10.  </div></div></td>
+            </tr>
+            <tr>
+                <!-- Space between parameters-->
+                <td colspan="6" height="10"></td>
+            </tr>
+            <tr>
+                <!-- Subtitles for modules-->
+                <td colspan="6" height="10" bgcolor="#add8e6"><div id="Subtitle">Module Statistics:</div></td>
+            </tr>
+            <!-- Modules-->
+            <tr>
+                <td width="0" height="150" valign="top" bgcolor="#add8e6"><center><div id="TipoDeModulo">Connections Module Statistics:</div></center>
+                    <!-- Connections module statistics -->
+                    <table  width="100%" border="2">
+                        <tr> <td bgcolor="white"><div id="Statistic">Arrival Rate(lambda): 0.5534153755183537</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Exit Rate(mu): 0.20159714296735384</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Busy time(rho): 0.2745154853746972</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Queue Size(Lq): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Clients in Service(Ls): 2.7451548537469725</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Clients in Module(L): 2.7451548537469725</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Queue(Wq): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Service(Ws): 4.960387757885724</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(W): 4.960387757885724</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(DDL): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(UPDATE)): 2.5709887507837186</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(JOIN): 3.1148214861747943</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(SELECT): 1.8801270137872397</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Idle Time: 0.0</div></td> </tr>
+                    </table>
+                    <!-- End of connections module statistics -->
+                </td>
+                <td width="0" height="150" valign="top" bgcolor="#add8e6"><center><div id="TipoDeModulo">Process Module Statistics:</div></center>
+                    <!-- Process module statistics -->
+                    <table  width="100%" border="2">
+                        <tr> <td bgcolor="white"><div id="Statistic">Arrival Rate(lambda): 0.5236857058938394</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Exit Rate(mu): 0.7433601871936284</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Busy time(rho): 0.7044844678471208</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Queue Size(Lq): 0.23475156508433231</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Clients in Service(Ls): 0.7044844678471209</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Clients in Module(L): 0.9392360329314532</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Queue(Wq): 0.44826804024305505</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Service(Ws): 1.3452428812138184</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(W): 1.7935109214568734</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(DDL): 0.07552325736196419</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(UPDATE)): 0.8710137241542555</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(JOIN): 1.5086375818044595</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(SELECT): 1.787505194440404</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Idle Time: 2.371243730986285</div></td> </tr>
+                    </table>
+                    <!-- End of process module statistics-->
+                </td>
+                <td width="0" height="150" valign="top" bgcolor="#add8e6"><center><div id="TipoDeModulo">Query Processing Module Statistics:</div></center>
+                    <!-- Query processing module statistics -->
+                    <table  width="100%" border="2">
+                        <tr> <td bgcolor="white"><div id="Statistic">Arrival Rate(lambda): 0.44572428772907813</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Exit Rate(mu): 0.5291655361742006</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Busy time(rho): 0.08423154140982196</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Queue Size(Lq): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Clients in Service(Ls): 0.8423154140982195</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Clients in Module(L): 0.8423154140982195</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Queue(Wq): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Service(Ws): 1.8897678167589533</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(W): 1.8897678167589533</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(DDL): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(UPDATE)): 0.9836299747097039</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(JOIN): 1.1733373154708775</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(SELECT): 1.877298560433277</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Idle Time: 3.495594587088984</div></td> </tr>
+                    </table>
+                    <!-- End of query processing module statistics -->
+                </td>
+                <td width="0" height="150" valign="top" bgcolor="#add8e6"><center><div id="TipoDeModulo">Transactions Module:</div></center>
+                    <!-- Transactions module statistics-->
+                    <table  width="100%" border="2">
+                        <tr> <td bgcolor="white"><div id="Statistic"> Rate(lambda): 0.33026227039547973</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Exit Rate(mu): 0.6666666666666666</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Busy time(rho): 0.049539340559321965</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Queue Size(Lq): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Clients in Service(Ls): 0.4953934055932196</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Clients in Module(L): 0.4953934055932196</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Queue(Wq): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Service(Ws): 1.5</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(W): 1.5</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(DDL): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(UPDATE)): 0.14999999999999994</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(JOIN): 0.68</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(SELECT): 1.8699999999999999</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Idle Time: 6.032591922186819</div></td> </tr>
+                    </table>
+                    <!-- End of transactions module statistics-->
+                </td>
+                <td width="0" height="150" valign="top" bgcolor="#add8e6"><center><div id="TipoDeModulo">Executor Module Statistics:</div></center>
+                    <!-- Executor module statistics-->
+                    <table  width="100%" border="2">
+                        <tr> <td bgcolor="white"><div id="Statistic">Arrival Rate(lambda): 0.27120087937590487</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Exit Rate(mu): 1.0251678712389156</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Busy time(rho): 0.026454289778722634</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Queue Size(Lq): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Clients in Service(Ls): 0.26454289778722634</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Clients in Module(L): 0.26454289778722634</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Queue(Wq): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Service(Ws): 0.9754499999999998</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(W): 0.9754499999999998</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(DDL): 0.0</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(UPDATE)): 0.5</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(JOIN): 0.7195499999999999</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(SELECT): 0.22100000000000009</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Idle Time: 2.283700870320944</div></td> </tr>
+                    </table>
+                    <!-- End of executor module statistics -->
+            </tr>
+            <!-- End of module statistics -->
+            </td>
+            <td width="0" height="80" valign="top" bgcolor="#add8e6"><div id="Subtitle">Query Statistics:</div>
+                <!-- Query statistics -->
+                <table  width="100%" border="2">
+                    <tr> <td bgcolor="white"><div id="Statistic">Discarded Connections: 0</div> </td> </tr>
+                    <tr> <td bgcolor="white"><div id="Statistic">Total Connection: 0</div> </td> </tr>
+                    <tr> <td bgcolor="white"><div id="Statistic">Average Connections Life Time: Infinity</div> </td> </tr>
+                </table>
+                <!-- End of query statistics-->
+            </td>
+        </table>
+    </div>
+        <!-- -->
+        <!-- -->
+        <!-- End of page--></body>
+ </html>

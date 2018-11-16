@@ -1,0 +1,143 @@
+        $divReference
+
+        $pageReference
+
+        <table border=1 width="100%" cellspacing="0" cellpadding="2">
+            <tr>
+                <!-- Width,     height,     color-->
+                <td colspan="6" height="40" bgcolor="#add8e6"><center><div id="TituloDePagina"> $title </div></center></td>
+            </tr>
+            <tr>
+
+                <td colspan="6" height="10"></td>
+            </tr>
+            <tr>
+                <!-- Parameters subtitle -->
+                <td colspan="6" height="10" bgcolor="#add8e6"><div id="Subtitle">Execution parameters:  <div id="TipoDeModulo">Maximum number of connections: $k, Query timeout:  $t  , Query Processing Module Servers: $n, Transactions Module Servers: $p, Executor Module Servers:   $m.  </div></div></td>
+            </tr>
+            <tr>
+                <!-- Space between parameters-->
+                <td colspan="6" height="10"></td>
+            </tr>
+            <tr>
+                <!-- Subtitles for modules-->
+                <td colspan="6" height="10" bgcolor="#add8e6"><div id="Subtitle">Module Statistics:</div></td>
+            </tr>
+            <!-- Modules-->
+            <tr>
+                <td width="0" height="150" valign="top" bgcolor="#add8e6"><center><div id="TipoDeModulo">Connections Module Statistics:</div></center>
+                    <!-- Connections module statistics -->
+                    <table  width="100%" border="2">
+                        <tr> <td bgcolor="white"><div id="Statistic">Arrival Rate(lambda): $lambdaFromConnectionsModule</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Exit Rate(mu): $muFromConnectionsModule</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Busy time(rho): $rhoFromConnectionsModule</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Queue Size(Lq): $LqFromConnectionsModule</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Clients in Service(Ls): $LsFromConnectionsModule</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Clients in Module(L): $LFromConnectionsModule</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Queue(Wq): $WqFromConnectionsModule</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Service(Ws): $WsFromConnectionsModule</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(W): $WFromConnectionsModule</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(DDL): $DDLFromConnectionsModule</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(UPDATE)): $UPDATEFromConnectionsModule</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(JOIN): $JOINFromConnectionsModule</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(SELECT): $SELECTFromConnectionsModule</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Idle Time: $idleTimeFromConnectionsModule</div></td> </tr>
+                    </table>
+                    <!-- End of connections module statistics -->
+                </td>
+                <td width="0" height="150" valign="top" bgcolor="#add8e6"><center><div id="TipoDeModulo">Process Module Statistics:</div></center>
+                    <!-- Process module statistics -->
+                    <table  width="100%" border="2">
+                        <tr> <td bgcolor="white"><div id="Statistic">Arrival Rate(lambda): $lambdaFromProcessModule</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Exit Rate(mu): $muFromProcessModule</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Busy time(rho): $rhoFromProcessModule</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Queue Size(Lq): $LqFromProcessModule</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Clients in Service(Ls): $LsFromProcessModule</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Clients in Module(L): $LFromProcessModule</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Queue(Wq): $WqFromProcessModule</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Service(Ws): $WsFromProcessModule</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(W): $WFromProcessModule</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(DDL): $DDLFromProcessModule</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(UPDATE)): $UPDATEFromProcessModule</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(JOIN): $JOINFromProcessModule</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(SELECT): $SELECTFromProcessModule</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Idle Time: $idleTimeFromProcessModule</div></td> </tr>
+                    </table>
+                    <!-- End of process module statistics-->
+                </td>
+                <td width="0" height="150" valign="top" bgcolor="#add8e6"><center><div id="TipoDeModulo">Query Processing Module Statistics:</div></center>
+                    <!-- Query processing module statistics -->
+                    <table  width="100%" border="2">
+                        <tr> <td bgcolor="white"><div id="Statistic">Arrival Rate(lambda): $lambdaFromQueryProcessingModule</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Exit Rate(mu): $muFromQueryProcessingModule</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Busy time(rho): $rhoFromQueryProcessingModule</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Queue Size(Lq): $LqFromQueryProcessingModule</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Clients in Service(Ls): $LsFromQueryProcessingModule</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Clients in Module(L): $LFromQueryProcessingModule</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Queue(Wq): $WqFromQueryProcessingModule</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Service(Ws): $WsFromQueryProcessingModule</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(W): $WFromQueryProcessingModule</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(DDL): $DDLFromQueryProcessingModule</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(UPDATE)): $UPDATEFromQueryProcessingModule</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(JOIN): $JOINFromQueryProcessingModule</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(SELECT): $SELECTFromQueryProcessingModule</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Idle Time: $idleTimeFromQueryProcessingModule</div></td> </tr>
+                    </table>
+                    <!-- End of query processing module statistics -->
+                </td>
+                <td width="0" height="150" valign="top" bgcolor="#add8e6"><center><div id="TipoDeModulo">Transactions Module:</div></center>
+                    <!-- Transactions module statistics-->
+                    <table  width="100%" border="2">
+                        <tr> <td bgcolor="white"><div id="Statistic"> Rate(lambda): $lambdaFromTransactionsModule</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Exit Rate(mu): $muFromTransactionsModule</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Busy time(rho): $rhoFromTransactionsModule</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Queue Size(Lq): $LqFromTransactionsModule</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Clients in Service(Ls): $LsFromTransactionsModule</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Clients in Module(L): $LFromTransactionsModule</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Queue(Wq): $WqFromTransactionsModule</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Service(Ws): $WsFromTransactionsModule</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(W): $WFromTransactionsModule</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(DDL): $DDLFromTransactionsModule</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(UPDATE)): $UPDATEFromTransactionsModule</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(JOIN): $JOINFromTransactionsModule</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(SELECT): $SELECTFromTransactionsModule</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Idle Time: $idleTimeFromTransactionsModule</div></td> </tr>
+                    </table>
+                    <!-- End of transactions module statistics-->
+                </td>
+                <td width="0" height="150" valign="top" bgcolor="#add8e6"><center><div id="TipoDeModulo">Executor Module Statistics:</div></center>
+                    <!-- Executor module statistics-->
+                    <table  width="100%" border="2">
+                        <tr> <td bgcolor="white"><div id="Statistic">Arrival Rate(lambda): $lambdaFromExecutorModule</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Exit Rate(mu): $muFromExecutorModule</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Busy time(rho): $rhoFromExecutorModule</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Queue Size(Lq): $LqFromExecutorModule</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Clients in Service(Ls): $LsFromExecutorModule</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Clients in Module(L): $LFromExecutorModule</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Queue(Wq): $WqFromExecutorModule</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Service(Ws): $WsFromExecutorModule</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(W): $WFromExecutorModule</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(DDL): $DDLFromExecutorModule</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(UPDATE)): $UPDATEFromExecutorModule</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(JOIN): $JOINFromExecutorModule</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Average Time in Module(SELECT): $SELECTFromExecutorModule</div></td> </tr>
+                        <tr> <td bgcolor="white"><div id="Statistic">Idle Time: $idleTimeFromExecutorModule</div></td> </tr>
+                    </table>
+                    <!-- End of executor module statistics -->
+            </tr>
+            <!-- End of module statistics -->
+            </td>
+            <td width="0" height="80" valign="top" bgcolor="#add8e6"><div id="Subtitle">Query Statistics:</div>
+                <!-- Query statistics -->
+                <table  width="100%" border="2">
+                    <tr> <td bgcolor="white"><div id="Statistic">Discarded Connections: $discardedConnections</div> </td> </tr>
+                    <tr> <td bgcolor="white"><div id="Statistic">Total Connection: $totalConnections</div> </td> </tr>
+                    <tr> <td bgcolor="white"><div id="Statistic">Average Connections Life Time: $averageConnectionsLifeTime</div> </td> </tr>
+                </table>
+                <!-- End of query statistics-->
+            </td>
+        </table>
+    </div>
+        <!-- -->
+        <!-- -->
+        <!-- End of page-->

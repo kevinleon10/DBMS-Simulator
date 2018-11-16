@@ -1,0 +1,17 @@
+public enum EventType {
+
+    CONNECTIONS_MODULE_ARRIVAL(),
+    PROCESS_MODULE_ARRIVAL(),
+    PROCESS_MODULE_DEPARTURE(),
+    QUERY_PROCESSING_MODULE_DEPARTURE(),
+    TRANSACTIONS_MODULE_DEPARTURE(),
+    CONNECTIONS_MODULE_DEPARTURE(),
+    SYSTEM_DEPARTURE(),
+    KILL_QUERY();
+
+    /**
+     * Constructor for EventType enum
+     */
+    EventType() {
+    }
+}
